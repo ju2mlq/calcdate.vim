@@ -18,6 +18,6 @@ class CalcDatePlugin(object):
         today = date.today()
         target = today - timedelta(days=days)
 
-        self.nvim.feedkeys(f"g,f{target}\n")
+        self.nvim.feedkeys(f"g,f\n{target}\n\n")
 
 
